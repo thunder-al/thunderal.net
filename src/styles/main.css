@@ -1,0 +1,16 @@
+@import "tailwindcss" source(none);
+@import "./fonts.css";
+
+@plugin "@tailwindcss/typography";
+
+@source "../../index.html";
+@source "../Root.vue";
+@source "../scenes/**/*.vue";
+@source "../components/**/*.vue";
+
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --default-font-family: var(--font-sans);
+}
